@@ -4,4 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-pyo3 = "0.22.2"
+pyo3 = { version = "0.22.2", features = ["experimental-async", "extension-module"] }
+
+[lib]
+name="pyo3-test"
+crate-type = ["cdylib", "rlib"]
