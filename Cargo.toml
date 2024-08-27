@@ -7,5 +7,5 @@ edition = "2021"
 pyo3 = { version = "0.22.2", features = ["experimental-async", "extension-module"] }
 
 [lib]
-name="pyo3-test"
+name="pyo3_test"
 crate-type = ["cdylib", "rlib"]
